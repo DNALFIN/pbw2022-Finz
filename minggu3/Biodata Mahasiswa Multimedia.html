@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Biodata Mahasiswa</title>
+    <style>
+        .btn {
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        }
+        .warning {
+        border-color: #ff9800;
+        color: orange;
+        }
+
+        .warning:hover {
+        background: #ff9800;
+        color: white;
+        }
+        .success {
+        border-color: #04AA6D;
+        color: green;
+        }
+
+        .success:hover {
+        background-color: #04AA6D;
+        color: white;
+        }
+        .danger {
+        border-color: #f44336;
+        color: red;
+        }
+
+        .danger:hover {
+        background: #f44336;
+        color: white;
+        }
+
+
+        .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        }
+
+        .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+
+        .closebtn:hover {
+        color: black;
+        }
+        .atas{
+            margin-left: 45px;
+        }
+        body{
+        
+        background-color: #F3F1EC;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin: 0px;
+        }
+        .layout {
+        
+        height: 768px;
+      
+        display: grid;
+        grid:
+          "sidebar body" 1fr
+          / auto 1fr;
+        gap: 8px;
+        }
+      
+        .kiri { grid-area: sidebar; }
+        .kanan {
+         grid-area: body; 
+         margin-left: 20px;
+        }
+        h1 {
+            color: #012554;
+        }
+        .hr1 {
+        border: 2px solid #D9534F;
+        border-radius: 5px;
+        }
+        .bg_krs {
+        background-color: #fff;
+        margin-top: -232px;
+        }
+        .bg_krs h3{
+        margin-left: 20px;
+        }
+        .tb_head {
+        background-color: #20485A;
+        color: #fff;
+        }
+        table{
+        width: 100%;
+        }
+        .table_krs{
+        font-family: sans-serif;
+        color: #232323;
+        border-collapse: collapse;
+        }
+        .table_krs, th, td {
+        border: 1px solid #999;
+        padding: 8px 20px;
+        }
+        .judul_krs {
+        padding-top: 20px;
+        padding-left: 30px;
+        }
+        .table_krs, th, td {
+        border: 0px solid #999;
+        border-bottom: 1px solid #999;
+        }
+        .table_krs tr:hover {background-color: #ddd;}
+        .table_krs tr:nth-child(even){background-color: #f2f2f2;}
+      </style>
+</head>
+<body>
+    <section class="atas">
+        <h1 align="center">Biodata Mahasiswa</h1>
+    <section class="layout">
+        <div class="kiri">
+            <img src="media/uu.jpg" height="300px">
+        </div>
+        <div class="kanan">
+            <hr class="hr1">
+           <table  callpading="55" style="border:0; "  style="margin-top: 20px;">
+            <tr>
+                <td><b>Nama</b></td>
+                <td>: Dwi Nur Alfin</td>
+            </tr>
+            <tr>
+                <td><b>Nim</b></td>
+                <td>: A11.2022.14043</td>
+            </tr>
+            <tr>
+                <td><b>Dosen Wali</b></td>
+                <td>: NURUL ANISA SRI WINARSIH, S.Kom, M.Cs</td>
+            </tr>
+            
+            <tr>
+                <td><b>Status</b></td>
+                <td>: Aktif </td>
+                
+            </tr>
+            <tr>
+                <td><b>Alamat Semarang</b></td>
+                <td>: Jl. Bedagan No 489 A</td>
+            </tr>
+            <tr>
+                <td><b>Alamat Asal</b></td>
+                <td>: Rembang</td>
+            </tr>
+            <tr>
+                <td><b>No HP</b></td>
+                <td>: 082137288921</td>
+            </tr>
+            <tr>
+                <td><b>Email</b></td>
+                <td>: 111202214043@mhs.dinus.ac.id</td>
+            </tr>
+            <tr>
+                <td><b>Agama</b></td>
+                <td>: Islam</td>
+            </tr>
+           </table>
+        </div>
+    </section>
+    
+    </section>
+    <div class="bg_krs">
+        <h3 class="judul_krs">Jadwal KRS</h3>
+        <table class="table_krs">
+            <tr class="tb_head">
+                <th>No</th>
+                <th>Kode Mata Kuliah</th>
+                <th>Kelompok</th>
+                <th>Matakuliah</th>
+                <th>SKS</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>A11.54101</td>
+                <td>A11.4102</td>
+                <td>KALKULUS 1</td>
+                <td>4</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>A11.54105</td>
+                <td>A11.4102</td>
+                <td>DASAR PEMROGRAMAN</td>
+                <td>4</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>A11.54302</td>
+                <td>A11.4102</td>
+                <td>MATEMATIKA DISKRIT</td>
+                <td>3</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>A11.54314</td>
+                <td>A11.4102</td>
+                <td>PEMROGRAMAN BERBASIS WEB</td>
+                <td>2</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>A11.54403</td>
+                <td>A11.4102</td>
+                <td>ORGANISASI DAN ARSITEKTUR KOMPUTER	</td>
+                <td>3</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>AF201704</td>
+                <td>A11.4102</td>
+                <td>DASAR DASAR KOMPUTASI</td>
+                <td>2</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>U201704</td>
+                <td>A11.4MATR</td>
+                <td>PENGANTAR TEKNOLOGI INFORMASI</td>
+                <td>2</td>
+                <td>B</td>
+                
+            </tr>
+        </table>
+      </div>
+      <section align="center">
+        <h2>Menampilkan vidio di HTML5</h2>
+        <video id="myVideo" width="320" height="240" controls>
+            <source src="media/Trailer Skin Project LoL.mp4" type="video/mp4">
+          </video> <br>
+         <section style="margin-top: 20px; margin-bottom: 50px;">
+            <button onclick="durasiVid()" type="button" class="btn warning bt_durasi">Durasi Video</button>
+            <button onclick="playVid()" type="button" class="btn success bt_play"> Play Video</button>
+            <button onclick="pauseVid()" type="button" class="btn danger bt_pause"> Pause Video</button>
+         </section>
+     </section>
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+
+        function durasiVid() {
+            alert(vid.duration);
+        }
+
+    </script>
+</html>
