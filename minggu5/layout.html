@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout HTML 5</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: rgb(50, 107, 214);
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: rgb(28, 207, 88);
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 300px; /* only for demonstration, should be removed */
+          background: rgb(185, 204, 15);
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #c41010;
+          height: 300px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: rgb(13, 41, 168);
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
+</head>
+<body>
+    
+
+<header>
+  <h2>HEADER HTML 5</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <div>Slide</div>
+      <li><a href="#">Masa Depan Indah</a></li>
+      <li><a href="#">Bersama</a></li>
+      <li><a href="#">Crypto Currency</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <div>Section</div>
+    <h1>BTC to the moon</h1>
+    <p>Investors who hope for a big increase in their cryptocurrency or other asset's value will use the phrase “to the moon.” Since the moon sits high in the sky, the term is a play on other terms such as “sky-high valuation,” “soaring prices,” and the like.</p>
+
+    
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+</body>
+</html>
